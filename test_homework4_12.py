@@ -2,7 +2,8 @@ import unittest
 import logging
 from homework4_12 import Runner
 
-
+logging.basicConfig(level=logging.INFO, filemode='w', encoding='utf8', filename='runner_tests.log',
+                        format="%(asktime)s | %(levelname)s | %(message)s")
 class RunnerTest(unittest.TestCase):
     is_frozen = False
 
@@ -29,5 +30,4 @@ class RunnerTest(unittest.TestCase):
             logging.warning("Неверный тип данных для объекта Runner")
 
 
-logging.basicConfig(level=logging.INFO, filemode='w', encoding='utf8', filename='runner_tests.log',
-                        format="%(asktime)s | %(levelname)s | %(message)s")
+
