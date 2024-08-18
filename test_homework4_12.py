@@ -29,6 +29,5 @@ class RunnerTest(unittest.TestCase):
             logging.warning("Неверный тип данных для объекта Runner")
 
 
-if __name__ == '__name__':
-    logging.basicConfig(level=logging.INFO, filemode='w', encoding='utf8', filename='runner_tests.log',
+logging.basicConfig(level=logging.INFO, filemode='w', encoding='utf8', filename='runner_tests.log',
                         format="%(asktime)s | %(levelname)s | %(message)s")
